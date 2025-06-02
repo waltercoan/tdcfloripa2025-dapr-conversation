@@ -1,0 +1,1 @@
+# TDC Florianópolis 2025 - Integrando Microservices a LLM com o Dapr 🎩- Distributed Application Runtime 
