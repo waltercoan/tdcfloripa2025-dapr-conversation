@@ -1,0 +1,39 @@
+
+@DAPR_HTTP_PORT = 34123
+@APP_A_HTTP_PORT = 8080
+@APP_B_HTTP_PORT = 8081
+@APP_P_HTTP_PORT = 8082
+
+### ☕ JAVA ☕ - App A POST
+POST http://localhost:{{APP_A_HTTP_PORT}}/api
+
+
+### ☕ JAVA ☕ -  App A POST
+POST  http://localhost:{{DAPR_HTTP_PORT}}/v1.0/invoke/app-a/method/api
+
+### 🐍 PYTHON 🐍 - App P GET
+POST http://localhost:{{APP_P_HTTP_PORT}}/api
+
+### 🎩 CONFIGURATION DAPR 🎩
+GET http://localhost:{{DAPR_HTTP_PORT}}/v1.0/configuration/configstore?key=CONVERSATION-NAME
+
+
+### ☕ JAVA ☕ - App A POST /chat
+POST http://localhost:{{APP_A_HTTP_PORT}}/api/chat
+Content-Type: application/json
+
+"Ola bom dia como vai?"
+
+
+### 🐍 PYTHON 🐍 - App P POST /chat
+POST http://localhost:{{APP_P_HTTP_PORT}}/api/chat
+Content-Type: application/json
+
+"Ola bom dia como vai?"
+
+
+### ☕ JAVA ☕ - App A POST /chat
+POST http://localhost:{{APP_A_HTTP_PORT}}/api/chat
+Content-Type: application/json
+
+"O que você sabe sobre walter.coan@gmail.com?"

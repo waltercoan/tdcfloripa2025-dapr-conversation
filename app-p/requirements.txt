@@ -1,0 +1,6 @@
+fastapi
+requests
+typing
+dapr
+dapr-ext-fastapi
+uvicorn

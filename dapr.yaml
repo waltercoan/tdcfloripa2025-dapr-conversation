@@ -1,0 +1,16 @@
+version: 1
+common:
+  resourcesPath: ./components/
+apps:
+  - appID: app-a
+    appDirPath: ./app-a/target/
+    appPort: 8080
+    command: ["java", "-jar", "app-a-0.0.1-SNAPSHOT.jar"]
+  - appID: app-b
+    appDirPath: ./app-b/target/
+    appPort: 8081
+    command: ["java", "-jar", "app-b-0.0.1-SNAPSHOT.jar"]
+  - appID: app-p
+    appDirPath: ./app-p/
+    appPort: 8082
+    command: ["venv/bin/python3", "main.py"]

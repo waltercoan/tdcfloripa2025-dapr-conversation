@@ -1,0 +1,16 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: openai-gpt
+spec:
+  type: conversation.openai
+  metadata:
+  - name: key
+    secretKeyRef:
+      name: openapikey
+  - name: model
+    value: gpt-4o-mini
+  - name: cacheTTL
+    value: 10m
+auth:
+  secretStore: secretstore  

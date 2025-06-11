@@ -9,7 +9,9 @@
 		"ghcr.io/devcontainers/features/java:1": {},
 		"ghcr.io/devcontainers/features/azure-cli:1": {},
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
-		"ghcr.io/dapr/cli/dapr-cli:0": {}
+		"ghcr.io/dapr/cli/dapr-cli:0": {},
+        "ghcr.io/devcontainers/features/python:1":{},
+        "ghcr.io/devcontainers/features/aws-cli:1":{}
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
