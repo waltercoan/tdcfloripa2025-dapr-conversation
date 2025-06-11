@@ -31,10 +31,6 @@ AWS_SECRET_ACCESS_KEY=<AWS SECRET ACCESS KEY COM PERMISSAO PARA O BEDROCK>
 AWS_DEFAULT_REGION=sa-east-1
 ```
 
-- Teclar F5 para executar o arquivo .vscode/launch.json
-
-- Utilizar o [arquivo teste.rest](./teste.rest) para executar as chamadas
-
 ## Instalação do Dapr
 
 - No terminal digitar
@@ -45,6 +41,12 @@ dapr init
 - Compilação dos projetos Java
 
 ```bash
+sudo su
+apt-get update -y
+apt-get upgrade -y
+apt-get install maven -y
+exit
+
 mvn package -DskipTests
 ```
 
@@ -62,3 +64,7 @@ pip install -r requirements.txt -t .
 ```bash
 docker exec dapr_redis redis-cli MSET CONVERSATION-NAME "openai-gpt"
 ```
+
+- Teclar F5 para executar o arquivo .vscode/launch.json
+
+- Utilizar o [arquivo teste.rest](./teste.rest) para executar as chamadas
