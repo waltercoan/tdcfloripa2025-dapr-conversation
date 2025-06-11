@@ -6,6 +6,12 @@
 
 ![Diagrama](./diagramas/diagrama.png)
 
+## Documentação
+
+- [Conversation Overview](https://docs.dapr.io/developing-applications/building-blocks/conversation/conversation-overview/)
+- [Conversation Components](https://docs.dapr.io/reference/components-reference/supported-conversation/)
+- [Conversation API Ref](https://docs.dapr.io/reference/api/conversation_api/)
+
 ## Evento
 
 ![Diagrama](./diagramas/trilha-api-e-microservices-integrando-microservices-a-llm-com-o-dapr-distributed-application-runtime-rectangular.png)
@@ -45,11 +51,11 @@ mvn package -DskipTests
 - Criação do Python Enviroment 
 
 ```bash
-pip install -r requirements.txt -t .
 pip install fastapi[standard]
 apt-get install python3-venv
 python3 -m venv venv
 source ./venv/bin/activate
+pip install -r requirements.txt -t .
 ```
 - Inclusão da chave-valor de configuração no Redis
 
