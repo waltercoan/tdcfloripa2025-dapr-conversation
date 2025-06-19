@@ -18,6 +18,12 @@
 
 [Download Slides](./diagramas/waltercoan-Integrando%20Microservices%20a%20LLM%20com%20o%20Dapr.pdf)
 
+### Fotos
+|  |  |
+| -------- | ------- |
+| ![Foto1](./imgs/img1.jpg) | ![Foto2](./imgs/img2.jpg) |
+| ![Foto3](./imgs/img3.jpg) | ![Foto4](./imgs/img4.jpg) |
+
 ## Ambiente
 
 - Criar um GitHub CodeSpace a partir de um fork da branch main
